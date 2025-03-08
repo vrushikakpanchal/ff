@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGoo - User Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">You<span>Goo</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-title">
+                    <h2>User Sign-Up</h2>
+                </div>
+                <form method="POST" action="user_signup.php">
+                    <div class="form-grid">
+                        <!-- Personal Details -->
+                        <div class="form-section">
+                            <h3>Personal Details</h3>
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="form-section">
+                            <h3>Location</h3>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <!-- Security -->
+                        <div class="form-section">
+                            <h3>Security</h3>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="otp">OTP</label>
+                                <input type="text" id="otp" name="otp" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p>If you are already registered, <a href="user-login.html">login here</a>.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGoo - User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">You<span>Goo</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>User Dashboard</h3>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="user-profile.html">Profile</a></li>
+                    <li><a href="user-settings.html">Settings</a></li>
+                    <li><a href="user-reports.html">Reports</a></li>
+                    <li><a href="user-feedback.html">Feedback</a></li>
+                </ul>
+            </aside>
+
+            <div class="main-content">
+                <div class="dashboard-header">
+                    <h2>Climate and Traffic Dashboard</h2>
+                </div>
+<div class="dashboard-content">
+    <h2>Climate and Traffic Analysis</h2>
+    <div class="graph-container">
+        <h3>Traffic Analysis</h3>
+        <canvas id="trafficChart" style="height: 400px; width: 100%;"></canvas>
+    </div>
+    <div class="graph-container">
+        <h3>Climate Analysis</h3>
+        <canvas id="climateChart" style="height: 400px; width: 100%;"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctxClimate = document.getElementById('climateChart').getContext('2d');
+        const climateChart = new Chart(ctxClimate, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Temperature (°C)',
+                    data: [0, 10, 5, 2, 20, 30, 40],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                animation: {
+                    duration: 1000,
+                    easing: 'easeInOutBounce'
+                }
+            }
+        });
+
+        const ctxTraffic = document.getElementById('trafficChart').getContext('2d');
+        const trafficChart = new Chart(ctxTraffic, {
+            type: 'bar',
+            data: {
+                labels: ['Morning', 'Afternoon', 'Evening', 'Night'],
+                datasets: [{
+                    label: 'Traffic Volume',
+                    data: [120, 200, 150, 80],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                animation: {
+                    duration: 1000,
+                    easing: 'easeInOutBounce'
+                }
+            }
+        });
+    </script>
+</div>
+
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

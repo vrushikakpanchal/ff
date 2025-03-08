@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGoo - Smart Traffic Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+<a href="index.html" class="logo">You<span>Goo</span></a>
+
+<button class="btn btn-primary" onclick="navigateTo('auth')">Login/Sign-Up</button>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section class="page active" id="home">
+            <div class="container">
+<div class="hero">
+
+                    <div class="hero-text slideInLeft">
+                        <h1>Smart Traffic Management for a Smarter City</h1>
+                        <p>Transforming urban mobility with smart IoT-driven traffic solutions that enhance road safety, reduce congestion, and improve air quality—integrated seamlessly with Tech-powered analytics for intelligent decision-making.</p>
+                        <button class="btn btn-primary" onclick="navigateTo('auth')">Get Started</button>
+                    </div>
+                    <div class="hero-image slideInRight">
+                        <img src="img.avif" alt="Traffic Management System">
+                    </div>
+                </div>
+            </div>
+            
+<div class="features">
+
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Intelligent Features</h2>
+                        <p>Our cutting-edge traffic management system leverages IoT-powered sensors and smart automation to monitor real-time traffic, optimize signal timings, and enhance urban mobility with seamless connectivity..</p>
+                    </div>
+                    
+                    <div class="features-container">
+                        <!-- Smart Adaptive LED Lighting -->
+                        <div class="feature-card fadeIn" style="animation-delay: 0.1s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Smart Adaptive LED Lighting</h3>
+                            <p>IoT-powered lighting adjusts brightness based on traffic, weather, and pedestrian movement for enhanced safety and energy efficiency.</p>
+                        </div>
+                    
+                        <!-- Dynamic Traffic Signals -->
+                        <div class="feature-card fadeIn" style="animation-delay: 0.3s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-traffic-light"></i>
+                            </div>
+                            <h3>Dynamic Traffic Signals</h3>
+                            <p>Real-time IoT-based traffic management optimizes signal timings, reducing congestion and prioritizing emergency vehicles.</p>
+                        </div>
+                    
+                        <!-- Air & Noise Pollution Monitoring -->
+                        <div class="feature-card fadeIn" style="animation-delay: 0.5s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-smog"></i>
+                            </div>
+                            <h3>Air & Noise Pollution Monitoring</h3>
+                            <p>IoT sensors continuously track air quality and noise levels, triggering automated sprinklers to reduce pollution.</p>
+                        </div>
+                    
+                        <!-- GIS-Based Traffic & Security Mapping -->
+                        <div class="feature-card fadeIn" style="animation-delay: 0.7s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3>GIS-Based Traffic & Security Mapping</h3>
+                            <p>Live city maps integrate congestion hotspots, stolen vehicle tracking, and pollution spikes for efficient urban management.</p>
+                        </div>
+                    
+                        <!-- AI-Powered License Plate Recognition -->
+                        <div class="feature-card fadeIn" style="animation-delay: 0.9s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>AI-Powered License Plate Recognition</h3>
+                            <p>AI-driven surveillance detects motion anomalies and tracks stolen vehicles to enhance road security.</p>
+                        </div>
+                    
+                        <!-- Predictive Traffic Flow Analytics -->
+                        <div class="feature-card fadeIn" style="animation-delay: 1.1s;">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Predictive Traffic Flow Analytics</h3>
+                            <p>AI-powered insights anticipate congestion patterns and optimize road usage, reducing travel time.</p>
+                        </div>
+                    </div>
+                    
+        </section>
+    </main>
+
+    <script>
+        function navigateTo(page) {
+            // Logic to navigate to different pages
+            window.location.href = page + '.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGoo - Admin Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">You<span>Goo</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Admin Control Panel</h3>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="manage-cameras.html">Manage Cameras</a></li>
+                    <li><a href="adjust-sprinklers.html">Adjust Sprinkler Timings</a></li>
+                    <li><a href="control-signals.html">Control Signal Lights</a></li>
+                    <li><a href="post-alerts.html">Post Alerts</a></li>
+                    <li><a href="public-dashboard.html">View Public Dashboard</a></li>
+                    <li><a href="feature.html">Find a vehicle</a></li>
+                </ul>
+                <!-- Moved License Plate Detection to Sidebar -->
+            </aside>
+
+            <div class="main-content">
+                <div class="dashboard-header">
+                    <h2>Live City View</h2>
+                    <button class="btn btn-primary" onclick="navigateTo('index.html')">Record Clip</button>
+                </div>
+                <!-- Video Focused & Bottom View -->
+                <div class="live-view-container" style="display: flex; justify-content: center; align-items: flex-end;">
+                    <video width="100%" style="max-height: 500px; object-fit: cover;" controls>
+                        <source src="vid_02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

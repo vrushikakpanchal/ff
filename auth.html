@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGoo - Login/Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">You<span>Goo</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-title">
+                    <h2>Select Your Role</h2>
+                    <p>Please choose your role to proceed:</p>
+                </div>
+<div class="role-selection">
+
+<div class="role-card" onclick="navigateTo('admin-signup')">
+
+                        <div class="role-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Admin (Traffic Police Control)</h3>
+                    </div>
+<div class="role-card" onclick="navigateTo('user-signup')">
+
+                        <div class="role-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Local User</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page + '.html';
+        }
+    </script>
+</body>
+</html>
